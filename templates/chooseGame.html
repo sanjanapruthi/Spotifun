@@ -1,0 +1,24 @@
+
+<!doctype html>
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+
+<title>Choose Game</title>
+
+<body style = "background-color:#44cec0;">
+
+<div class="text-center">
+    <h2 class="display-1">Choose a game</h2>
+</div>
+<div class = "text-center">
+    <form action="/guessTheSong" method="post">
+        <button type="submit" style = "background-color:#ffb096;padding:15px;font-size:25px;"> GUESS THE SONG </button>
+	<p> Description</p>
+    </form>
+    <form action="/mostLikely" method="post">
+        <button type="submit" style = "background-color:#ffb096;padding:15px;font-size:25px;"> MOST LIKELY </button>
+	<p> Description</p>
+    </form>
+
+</div>
+
+</body>

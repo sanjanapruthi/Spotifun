@@ -1,0 +1,18 @@
+
+<!doctype html>
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+
+<title>Results</title>
+
+<body style = "background-color:#44cec0;">
+
+<div class="text-center">
+    <h2 class="display-2">{{ message }}</h2>
+    
+    <form action="/mostLikely" method="GET">
+        <button type="submit" style = "background-color:#ffb096;padding:10px;font-size:25px;"> PLAY AGAIN </button>
+    </form>
+
+</div>
+
+</body>

@@ -1,0 +1,39 @@
+
+
+<!doctype html>
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+
+<title>Most Likely</title>
+
+<body style = "background-color:#44cec0;">
+
+<div class="text-center"> 
+    <h2 class="display-2">Who's the most....</h2>
+    <h3 class="display-1">{{ question  }} ???</h3>
+
+	<style>
+	  .test {
+	    width: 250px;
+	    height:250px;
+	    background-color: #ffb096;
+	    display: flex;	  
+	    justify-content: center;
+  	    align-items: center;
+	    border-radius: 100%;
+	    text-align: center;
+	    font-size: 30px;
+	    display:inline-block;
+	    padding: 50px;
+	}
+	  </style>
+
+    <div> <form action="/results" method="POST"> <input type = "submit" class="test rounded-circle" value = {{ u1 }} name = "submitbutton" > </input> </form> &nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<form action = "/results" method="POST" > <input type = "submit" class="test rounded-circle" value = {{ u2 }} name = "submitbutton"> </input> </form> </div>
+
+</div>
+</div>
+
+</body>

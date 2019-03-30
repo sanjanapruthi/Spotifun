@@ -1,0 +1,21 @@
+<!doctype html>
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+
+<title>Hello from Flask</title>
+
+<body style = "background-color:#44cec0;">
+
+<div class="text-center">
+    <h1 class="display-1">SpotiFun</h1>
+    <h3> A new way to share music </h3>
+</div>
+<div class = "text-center">
+    <p></p>
+    <form action="/home" method="post">
+	<h5 style="padding-top: 50px">Player name: <input type = "text" class="col-6 col-form-label" name = "username" /></h5> 
+        <button type="submit" style = "background-color:#ffb096;padding:10px;font-size:25px;"> LOG IN </button>
+    </form>
+
+</div>
+
+</body>
